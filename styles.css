@@ -1,44 +1,66 @@
 body, html {
-    height: 100%;
-
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url('masterImg/space.jpg');
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    /* Full height */
-    height: 47%;
+}
+.bgimg-1 {
+  background-image: url("masterImg/space.jpg");
+  min-height: 100%;
+  opacity: 1;
+}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bgimg-2 {
+  background-image: url("masterImg/pillars.jpg");
+  min-height: 400px;
+  opacity: 0.9;
 }
-@@keyframes titleAnim {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+
+.bgimg-3 {
+  background-image: url("masterImg/emission.jpg");
+  min-height: 400px;
 }
-.font{
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
   font-family: 'Space Mono', monospace;
-
-
 }
-#titleTxt{
-  font-size: 72px;
-  font-weight: bold;
-  color: white;
-  background-color:black;
-  position: fixed;
-  animation-name: titleAnim;
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Space Mono', monospace;
 }
-#mainTxt{
 
-  font-size:36px;
-  background-color: black;
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  font-family: 'Space Mono', monospace;
+}
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
