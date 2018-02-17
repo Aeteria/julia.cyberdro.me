@@ -24,6 +24,7 @@ body, html {
   background-image: url("masterImg/pillars.jpg");
   min-height: 400px;
   opacity: 0.9;
+
 }
 
 .bgimg-3 {
@@ -39,6 +40,8 @@ body, html {
   text-align: center;
   color: #000;
   font-family: 'Space Mono', monospace;
+  filter: brightness(100%);
+  text-shadow: 2px 2px 5px black;
 }
 
 .caption span.border {
@@ -59,8 +62,11 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (
+  max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+
+    
 }
