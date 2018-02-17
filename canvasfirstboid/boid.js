@@ -65,7 +65,9 @@ class Boid {
     }
     if(Math.abs(this.loc.dist(r.loc)) < 100){
     console.log(this.loc, r.loc)
-      this.vel = this.loc.sub(r.loc);
+
+    //  this.vel = this.loc.sub(r.loc);
+    this.vel = this.loc.sub(r.loc); 
       console.log(this.vel);
 
 
@@ -83,7 +85,7 @@ class Boid {
     //this.context.fill();
 
     this.context.beginPath();
-    this.context.arc(this.loc.x, this.loc.y, 3, 0, 2 * Math.PI, false);
+    this.context.arc(this.loc.x, this.loc.y, 1.5, 0, 2 * Math.PI, false);
     this.context.fill();
     this.context.stroke();
 
