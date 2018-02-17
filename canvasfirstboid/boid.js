@@ -63,7 +63,7 @@ class Boid {
       this.loc.x+= this.vel.x;
       this.loc.y+= this.vel.y;
     }
-    if(Math.abs(this.loc.dist(r.loc))<100){
+    if(Math.abs(this.loc.dist(r.loc)) < 100){
     console.log(this.loc, r.loc)
       this.vel = this.loc.sub(r.loc);
       console.log(this.vel);

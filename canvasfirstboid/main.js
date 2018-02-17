@@ -5,7 +5,7 @@ window.addEventListener('load', setup, false);
 
 var main;   // the global Main object
 const FRAME_RATE=30;
-const NUM_BOIDS = 1;
+const NUM_BOIDS = 100;
 const GRAV = 0.2;
 const MAX_VEL = 4;
 function setup() {

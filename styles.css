@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('masterImg/space.jpg');
+
+    /* Full height */
+    height: 47%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@@keyframes titleAnim {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.font{
+  font-family: 'Space Mono', monospace;
+
+
+}
+#titleTxt{
+  font-size: 72px;
+  font-weight: bold;
+  color: white;
+  background-color:black;
+  position: fixed;
+  animation-name: titleAnim;
+}
+#mainTxt {
+  /*height:100px;*/
+  display:inline-block;
+  font-size:36px;
+  width: 200px;
+  background-blend-mode: darken;
+
+
+}
