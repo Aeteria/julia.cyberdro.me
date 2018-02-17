@@ -5,7 +5,7 @@ window.addEventListener('load', setup, false);
 
 var main;   // the global Main object
 const FRAME_RATE=30;
-const NUM_BOIDS = 1000;
+const NUM_BOIDS = 3000;
 const GRAV = 0.2;
 const MAX_VEL = 4;
 function setup() {
@@ -150,7 +150,7 @@ class Main {
    handleCNVMouseClicked(){
      this.mouseX = event.clientX;
      this.mouseY = event.clientY;
-console.log(event)
+
    }
 
 

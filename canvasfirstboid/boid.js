@@ -12,7 +12,7 @@ class Boid {
     this.acc = vector2d(0, GRAV)
     this.rep = vector2d(5,5 )
     this.repMult = .1;
-
+    this.hasReflected = false;
     this.context = this.main.context;
     //create all initial items
     this.init();
@@ -49,6 +49,7 @@ class Boid {
 
 
   update() { // render or draw this to canvas
+
     this.checkEdges();
     if(this.main.gravity === false){
     this.loc.x+= this.vel.x;
@@ -63,14 +64,17 @@ class Boid {
       this.loc.x+= this.vel.x;
       this.loc.y+= this.vel.y;
     }
-    if(Math.abs(this.loc.dist(r.loc)) < 100){
-    console.log(this.loc, r.loc)
+    if(Math.abs(this.loc.dist(r.loc)) < 100 && this.hasReflected == false){
 
-    //  this.vel = this.loc.sub(r.loc);
-    this.vel = this.loc.sub(r.loc); 
-      console.log(this.vel);
+    var mainV = vector2d(this.loc.x-r.loc.x, this.loc.y-r.loc.y);
+    var velDot = mainV.normalize();
+    var velScale = this.vel.dotProd(velDot)*2;
+    var velSub = mainV.scale(velScale);
+    this.vel = this.vel.sub(velSub);
+    this.hasReflected = true;
 
-
+    }else if(Math.abs(this.loc.dist(r.loc)) > 100){
+      this.hasReflected = false;
     }
     if(this.vel.length() > 4){
       this.vel.normalize();
