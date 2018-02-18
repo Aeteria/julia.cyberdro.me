@@ -3,34 +3,18 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-
+background-image: url("img/paper.jpg");
 }
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg{
   position: relative;
   opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("masterImg/space.jpg");
-  min-height: 100%;
+  background-image: url("img/paper.jpg");
+  min-height: 50%;
   opacity: 1;
-}
-
-.bgimg-2 {
-  background-image: url("masterImg/pillars.jpg");
-  min-height: 400px;
-  opacity: 0.9;
-
-}
-
-.bgimg-3 {
-  background-image: url("masterImg/emission.jpg");
-  min-height: 400px;
 }
 
 .caption {
@@ -40,7 +24,7 @@ body, html {
   width: 100%;
   text-align: center;
   color: #000;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Sorts Mill Goudy', serif;
   filter: brightness(100%);
   text-shadow: 2px 2px 5px black;
 }
@@ -51,23 +35,12 @@ body, html {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Sorts Mill Goudy', serif;
 }
-
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
-  font-family: 'Space Mono', monospace;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (
-  max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-
-
+  font-family: 'Sorts Mill Goudy', serif;
 }
