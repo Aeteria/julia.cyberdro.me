@@ -88,7 +88,7 @@ Novel.js needs some HTML on the webpage to run properly. You can use the simple 
 </div>
 ```
 
-Only one Novel.js instance per webpage is supported.
+Only one Novel.js instance per webpage is supported. By default the novel is loaded from the `novel` folder in the root, however you can customize this path by using the `src` attribute of the `<novel>` or `<div id="novel-area">` tag. For example, `<novel src="./alternate">`.
 
 ## `novel.json` structure
 
@@ -644,6 +644,7 @@ The `uiText` object in `novel.json` contains translations for the user interface
   {"name": "copyButton", "language": "english", "content": "Copy" },
   {"name": "saveButton", "language": "english", "content": "Save" },
   {"name": "loadButton", "language": "english", "content": "Load" },
+  {"name": "loadDataButton", "language": "english", "content": "Load" },
   {"name": "skipButton", "language": "english", "content": "Skip" },
   {"name": "continueButton", "language": "english", "content": "Continue" },
   {"name": "inventoryTitle", "language": "english", "content": "Inventory:" },
