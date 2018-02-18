@@ -1,0 +1,9 @@
+/src/
+/scss/
+/novel/
+/test/
+.travis.yml
+Gulpfile.js
+/cov/
+coverage.lcov
+report.json
