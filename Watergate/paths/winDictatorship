@@ -13,16 +13,17 @@
 <body>
   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <p style="text-align:center;font-family: 'Sorts Mill Goudy', serif; color: black;">
-    On April 24, 1973 learn from Attorney General Richard Kleindienst that John Dean, White House counsel,
-    had testified about the white House having ordered the break-in at the office of Pentagon Papers leaker Daniel Ellsberg's psychiatrist </p>
-    <p style="text-align:center;font-family: 'Sorts Mill Goudy', serif;">If his testimonies continue, your campaign will be further implicated in the scandal.</p>
-    <h3 style="text-align:center;font-family: 'Sorts Mill Goudy', serif;">What do you do?</h3>
+    You have successfully covered up the Watergate scandal. After completing your second term you rig the election such that you win another landslide for your third.
+  You are well on your way to establishing a dictatorship. </p>
+    <p style="text-align:center;font-family: 'Sorts Mill Goudy', serif;">
+      </p>
+    <h3 style="text-align:center;font-family: 'Sorts Mill Goudy', serif;">Congratulations! You Won!</h3>
 
     <h3 style="text-align:center; font-family: 'Sorts Mill Goudy', serif;">
-      <a href="paths/nixonStart.html" class="w3-btn w3-black w3-small">Nothing</a>
+      <a href="../index.html" class="w3-btn w3-black w3-small">Play Again</a>
     </h3>
     <h3 style="text-align:center; font-family: 'Sorts Mill Goudy', serif;">
-      <a href="../paths/johnDeanKilled.html" class="w3-btn w3-black w3-small">"Dispose" of John Dean for good</a>
+      <a href="../../index.html" class="w3-btn w3-black w3-small">Return to main site</a>
     </h3>
 
   </div>
